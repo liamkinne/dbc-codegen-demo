@@ -1,0 +1,11 @@
+[package]
+name = "dbc-demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# required by dbc-codegen
+bitvec = { version = "1.0.1", default-features = false }
+
+[build-dependencies]
+dbc-codegen = { git = "https://github.com/liamkinne/dbc-codegen.git", branch = "feature/codegen-into-out-dir", version = "0.3.0" }
